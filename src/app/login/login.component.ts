@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) {
     this.formSubmit = this.formBuilder.group({
       inputEmail: ['', Validators.email],
-      inputPassword: ['', Validators.required]
+      inputPassword: ['', Validators.compose([Validators.maxLength(20), Validators.minLength(4)])]
     });
   }
 

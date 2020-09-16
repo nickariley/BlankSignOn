@@ -4,10 +4,10 @@
   <h1 class="h3 mb-3 font-weight-normal">Please log in</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
   <input type="email" id="inputEmail" formControlName="inputEmail" class="form-control" placeholder="Email address">
-  <label class="alert alert-danger" *ngIf="!this.formSubmit.controls.inputEmail.valid && this.formSubmit.controls.inputEmail.touched">Email Required</label>
+  <label class="alert alert-danger" *ngIf="!this.formSubmit.controls.inputEmail.valid && this.formSubmit.controls.inputEmail.touched" style="margin: 10px">Email Required</label>
   <label for="inputPassword" class="sr-only">Password</label>
   <input type="password" id="inputPassword" formControlName="inputPassword" class="form-control" placeholder="Password">
-  <label class="alert alert-danger" *ngIf="inputPasswordInvalid">Password Required: Must be 4-20 characters</label>
+  <label class="alert alert-danger" *ngIf="inputPasswordInvalid" style="margin: 10px">Password Required: Must be 4-20 characters</label>
   <div class="checkbox mb-3">
     <label>
       <input type="checkbox" value="remember-me"> Remember me

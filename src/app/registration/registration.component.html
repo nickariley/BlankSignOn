@@ -12,9 +12,7 @@
   <input type="password" id="confirmPassword" formControlName="confirmPassword" class="form-control" placeholder="Confirm Password">
   <label class="alert alert-danger" *ngIf="confirmPasswordInvalid" style="margin: 10px">Please confirm password</label>
   <label class="alert alert-danger" *ngIf="passwordError">Passwords do not match</label>
-  <div class="checkbox mb-3">
 
-  </div>
   <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!formSubmit.valid">Log In</button>
   <p class="mt-5 mb-3 text-muted">© 2017-2020</p>
 </form>

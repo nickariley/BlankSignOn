@@ -15,6 +15,7 @@
   </div>
   <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!formSubmit.valid">Log In</button>
   <button routerLink="/registration" class="btn btn-lg btn-success btn-block" type="submit">Register</button>
+  <label class="alert alert-danger" *ngIf="!validLogin">Invalid username and/or password</label>
   <p class="mt-5 mb-3 text-muted">© 2017-2020</p>
 </form>
 
